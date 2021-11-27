@@ -189,7 +189,7 @@ hr {
 }
 
 .HSLogo  {
-    width: 150px;
+    width: 300px;
     padding-top: 10px;
 }
 
@@ -198,14 +198,13 @@ hr {
 }
 
 #projects {
-    padding: 80px;
+    padding: 80px 20px;
     background-color: black;
-    color: white;    
-    width: 100vw;
+    color: white; 
     text-align: center;
 }
 
-#pro-midframe { 
+#pro-midframe {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -239,7 +238,7 @@ hr {
 }
 
 #ex-box {
-    margin: 20px;
+    margin: 30px;
     padding-top: 40px;
     display: flex;
     flex-wrap: wrap;
