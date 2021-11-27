@@ -1,0 +1,263 @@
+html {
+    font-size: 10px;    
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 50px 0 0 0;
+}
+
+
+header {
+    font-size: 2.5rem;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left: 0;
+    background-color: white;
+    z-index:1;
+
+}
+
+label, #toggle {
+    display: none;
+}
+
+#nav {
+    margin: 0;
+    padding: 0 0 20px 0;    
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+}
+
+ul li {
+    font-weight: 700;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+a {
+    color:peru;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
+
+@media screen and (max-width:1023px) {
+    header {        
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    header {        
+        font-size: 1.6rem;        
+        display:flex;
+        flex-direction:column;
+    }
+    
+    #nav {
+        display: none;
+    }
+    label {
+        display: block;
+        text-align:center;
+        font-size: 40px;
+        font-weight: bold;
+        color: peru;
+    }
+    label:hover {
+        cursor: pointer;
+    }
+    #toggle:checked+ #nav {
+            display: flex;
+            flex-direction: column;
+        }
+        #nav li {
+            display:block;
+        }
+}
+
+
+
+
+#welcome-section {
+    color: white;
+    font-size: 3rem;
+    padding: 0 15px;
+    max-width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;    
+    justify-content: center;
+}
+#welcome-section::before {
+    content: "";
+    background: url(https://images.pexels.com/photos/2115217/pexels-photo-2115217.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.HL {
+    padding: 0 10px;
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.445);
+}
+
+#about {
+    padding: 80px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#about-detail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#about-detail div {
+    font-size: 2rem;
+    width: 200px;
+    padding: 0 10px;
+}
+#skills {
+    padding: 80px 0;
+    align-items: center;
+    background-color: rgb(253, 207, 3);
+    display:flex;
+    flex-flow: column;
+}
+
+
+#skill-boxs {
+    margin: 50px;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.logo-box {
+    font-size: 2rem;
+    color: rgb(255, 94, 0);
+    background-color: white;
+    margin-bottom: 30px;
+    width: 350px;
+    text-align: center;    
+    padding-bottom: 10px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px  rgba(128, 128, 128, 0.281);
+}
+
+h2 {
+    font-size: 5rem;
+    margin: 50px auto;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+hr {
+    width: 300px;
+}
+
+.HSLogo  {
+    width: 150px;
+    padding-top: 10px;
+}
+
+#AHALogo {
+    width: 300px;
+}
+
+#projects {
+    padding: 80px;
+    background-color: black;
+    color: white;    
+    width: 100vw;
+    text-align: center;
+}
+
+#pro-midframe { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.pro-boxs {
+    margin: 20px 10px;
+    padding: 40px;
+    background-color: white;
+    color: black;
+    border-color: transparent;
+    border-radius: 20px;
+    font-size: 1.6rem;
+    line-height: 0.5;
+}
+
+.P-imgs {
+    width:200px;
+    height: 250px;
+}
+
+
+#career {
+    font-size: 2rem;
+    background-color: white;
+    width: 100vw;
+    padding: 80px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#ex-box {
+    margin: 20px;
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.C-logo {
+    border: 5px solid black;
+    border-radius: 50%;
+    width:100px; 
+    height:100px;
+    margin: 0 20px;
+}
+
+.x-logo {
+    margin: 0 auto;
+    border: 5px dashed black;
+    border-radius: 50%;
+    width:100px; 
+    height:100px;
+}
