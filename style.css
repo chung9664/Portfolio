@@ -93,7 +93,7 @@ a:hover, a:active { text-decoration: none; }
         #nav li {
             display:block;
         }
-    p {
+    #intro {
         width: 350px;
     }
 }
