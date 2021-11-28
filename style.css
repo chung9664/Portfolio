@@ -93,6 +93,9 @@ a:hover, a:active { text-decoration: none; }
         #nav li {
             display:block;
         }
+    p {
+        width: 350px;
+    }
 }
 
 
@@ -124,7 +127,7 @@ a:hover, a:active { text-decoration: none; }
 }
 
 .HL {
-    padding: 0 10px;
+    padding:0 5px;
     border-radius: 5px;
     background-color: rgba(128, 128, 128, 0.445);
 }
@@ -245,7 +248,7 @@ hr {
     justify-content: space-evenly;
 }
 
-.C-logo {
+.c-logo {
     border: 5px solid black;
     border-radius: 50%;
     width:100px; 
