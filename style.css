@@ -50,6 +50,12 @@ ul li {
     margin-left: 20px;
 }
 
+ul li:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 10px; 
+}
+
 a {
     color:peru;
     text-decoration: none;
@@ -178,6 +184,11 @@ a:hover, a:active { text-decoration: none; }
     padding-bottom: 10px;
     border-radius: 20px;
     box-shadow: 10px 10px 5px  rgba(128, 128, 128, 0.281);
+    transition: 0.3s;
+}
+
+.logo-box:hover {
+    transform: scale(0.95);
 }
 
 h2 {
